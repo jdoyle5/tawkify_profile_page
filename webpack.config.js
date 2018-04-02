@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
   entry: './frontend/profile-assets.jsx',
@@ -12,7 +13,7 @@ module.exports = {
         exclude: /(node_modules)/,
         loader: 'babel-loader',
         query: {
-          presets: ['env', 'react']
+          presets: ['env', 'react', 'es2015']
         }
       },
       {
