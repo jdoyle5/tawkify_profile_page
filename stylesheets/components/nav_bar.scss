@@ -3,6 +3,12 @@
   src: url('/assets/font_files/ProximaNova-Regular.otf') format('opentype');
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {font-family: 'ProximaNova';
+    src: url('/assets/font_files/ProximaNova-Regular.otf') format('otf');
+  }
+}
+
 .nav-bar {
   position: fixed;
   top: 0;
@@ -21,7 +27,7 @@
  background-color: black;
  min-height: 50px;
  padding: 10px 15px;
- font-family: 'ProximNova';
+ font-family: $text;
  margin: 0;
  border: 0;
  border-bottom: 1px solid lightgray;
@@ -34,15 +40,131 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   padding: 2px 11px;
-  font-family: 'ProximNova';
 
    a:hover {
-    color: #a3a4a3;
+    color: $opacity;
     cursor: pointer;
+    opacity: 0.6;
    }
 
    img {
-     height: 40px;
-     width: 120px;
+     height: 47px;
+     width: 140px;
    }
+
+   img:hover {
+     color: $opacity;
+     cursor: pointer;
+     opacity: 0.4;
+   }
+}
+
+.nav-link {
+  color: $white;
+  margin-right: 5px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  padding: 2px 11px;
+}
+
+.nav-link:hover {
+  color: $opacity;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-phone {
+  color: $white;
+  margin-right: 12px;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  padding: 2px 11px;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width:130px;
+  height: 50px;
+  background-color: $chat;
+  border: 1px solid $white;
+}
+
+.chat-box:hover {
+  color: $opacity;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.love-expert {
+  color: $white;
+  font-size: 10px;
+  align-items: center;
+  opacity: 0.7;
+  margin-top: 3px;
+}
+
+.love-expert:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 80%; /* Change this to whatever width you want. */
+  padding-top: 2px; /* This creates some space between the element and the border. */
+  border-bottom: 1px solid $white; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.click-here-top {
+  display: flex;
+  flex-direction: row;
+  color: $white;
+  font-size: 11px;
+  align-items: center;
+  font-weight: bold;
+  width: 100%;
+}
+
+.click-here-bottom {
+  color: $white;
+  font-size: 11px;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.click-here-bottom-one {
+  color: $white;
+  font-size: 11px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.click-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone {
+  color: $white;
+  margin-left: 9px;
+  margin-right: 11.5px;
 }
