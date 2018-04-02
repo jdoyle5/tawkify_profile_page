@@ -1,7 +1,7 @@
 import merge from 'lodash/merge';
-import { RECIEVE_TOP_QUALITIES } from '../actions/ideal_partner/actions';
+import { RECIEVE_TOP_QUALITIES } from '../actions/ideal_partner_actions';
 
-const topQualities = (state = {}, action) => {
+const idealPartner = (state = {}, action) => {
   Object.freeze(state);
   switch (action.type) {
     case RECIEVE_TOP_QUALITIES:
@@ -11,4 +11,4 @@ const topQualities = (state = {}, action) => {
   }
 };
 
-export default topQualities;
+export default idealPartner;
