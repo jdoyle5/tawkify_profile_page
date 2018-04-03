@@ -20,7 +20,7 @@ const NavBar = () => (
         <Link to={""} className="chat-box">
           <div className="love-expert">Chat with a love expert</div>
           <div className="click-here-top">
-            <i className="fa fa-phone phone" aria-hidden="true"></i>
+          <i className="fa fa-phone phone" aria-hidden="true"></i>
           <div className="click-here-bottom-one">Click here for</div>
           </div>
           <div className="click-here-bottom">free screening</div>
