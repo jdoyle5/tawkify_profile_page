@@ -4,7 +4,24 @@ import { Link } from 'react-router-dom';
 import { Grid, Row, Col, Clearfix, Container } from 'react-bootstrap/lib';
 
 export default class AboutYourself extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      color_blue: false
+    };
+
+    this.changeColor = this.changeColor.bind(this);
+  }
+
+  changeColor() {
+    this.setState({color_blue: !this.state.color_blue});
+  }
+
   render() {
+    let yesColor = this.state.color_blue ? "blue" : "gray";
+    let noColor = this.state.color_blue ? "gray" : "blue";
+
     return (
       <div className="Container everything">
         <div className="home-photo">
@@ -26,6 +43,9 @@ export default class AboutYourself extends React.Component {
                   <option value="female">Female</option>
                 </select>
               </div>
+              <label className="select-sub">
+                select your gender
+              </label>
             </div>
 
             <div className="col-sm pull-right col-centered">
@@ -95,7 +115,7 @@ export default class AboutYourself extends React.Component {
           </div>
           {/*********************************************************/}
 
-          {/*************Location and Date of birth row**************/}
+          {/*************Height and height a factor row**************/}
           <div className="row">
             <div className="col-sm pull-right col-centered">
               <div>
@@ -129,18 +149,58 @@ export default class AboutYourself extends React.Component {
             </div>
 
             <div className="col-sm pull-right col-centered">
-              <div className="column-lavel-div">
-                <label className="form-label">Location</label>
+              <div>
+                <label className="blank-label"></label>
+                <span className="star"></span>
+              </div>
+              <div className="yes-no-div">
+                <div className="yes-button" style={{backgroundColor: yesColor}} onClick={this.changeColor}>yes</div>
+                <div className="no-button" style={{backgroundColor: noColor}} onClick={this.changeColor}>no</div>
+              </div>
+              <label className="select-sub">Is height a factor in your match preferences?</label>
+            </div>
+          </div>
+          {/*********************************************************/}
+
+          {/*************Occupation and Income row**************/}
+          <div className="row">
+            <div className="col-sm pull-right col-centered">
+              <div>
+                <label className="form-label">Occupation</label>
                 <span className="star">*</span>
               </div>
               <div>
-                <input className="select"
-                       name="location"
-                       maxLength="5"
-                       type="tel">
-                </input>
+                <textarea className="textarea"></textarea>
               </div>
-              <label className="select-sub">select the gender you are seeking</label>
+              <label className="select-sub">
+                select your occupation
+              </label>
+            </div>
+
+            <div className="col-sm pull-right col-centered">
+              <div>
+                <label className="form-label">You Are Seeking</label>
+                <span className="star">*</span>
+              </div>
+              <div>
+                <select className="select" name="gender">
+                  <option value=""></option>
+                  <option value="less than $40,000">less than $40,000</option>
+                  <option value="$40,000 - $60,000">$40,000 - $60,000</option>
+                  <option value="$60,000 - $80,000">$60,000 - $80,000</option>
+                  <option value="$80,000 - $100,000">$80,000 - $100,000</option>
+                  <option value="$100,000 - $125,000">$100,000 - $125,000</option>
+                  <option value="$125,000 - $150,000">$125,000 - $150,000</option>
+                  <option value="$150,000 - $200,000">$150,000 - $200,000</option>
+                  <option value="$200,000 - $250,000">$200,000 - $250,000</option>
+                  <option value="$250,000 - $500,000">9$250,000 - $500,000</option>
+                  <option value="$500,000 - $1,000,000">$500,000 - $1,000,000</option>
+                  <option value="Rather not say">Rather not say</option>
+                </select>
+              </div>
+              <label className="select-sub">
+                why? this is one form of an indicator...
+              </label>
             </div>
           </div>
           {/*********************************************************/}
