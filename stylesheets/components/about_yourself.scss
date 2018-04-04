@@ -4,27 +4,6 @@
   font-family: $text;
 }
 
-@media only screen and (-webkit-min-width: 600px) {
-  .everything {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-}
-
-@media only screen and (-webkit-min-width: 1000px) {
-  .index-sub-display {
-    margin-left: 150px;
-    margin-right: 150px;
-  }
-}
-
-@media only screen and (-webkit-min-width: 1500px) {
-  .index-sub-display {
-    margin-left: 200px;
-    margin-right: 200px;
-  }
-}
-
 @media only screen and (min-width: 800px) {
   .everything {
     margin-left: 75px;
@@ -47,6 +26,34 @@
 }
 
 @media only screen and (min-width: 1400px) {
+  .everything {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+}
+
+@media only screen and (-webkit-min-width: 800px) {
+  .everything {
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+}
+
+@media only screen and (-webkit-min-width: 1000px) {
+  .everything {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
+
+@media only screen and (-webkit-min-width: 1200px) {
+  .everything {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
+@media only screen and (-webkit-min-width: 1400px) {
   .everything {
     margin-left: 250px;
     margin-right: 250px;
@@ -308,13 +315,12 @@
   }
 }
 
-.progress-div-all-nums {
+.progress-div-all-text {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 20px;
 }
 
 .progress-div-all {
@@ -338,13 +344,51 @@
 }
 
 .heading {
-  margin-top: 40px;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-top: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
   font-size: 18px;
   text-align: center;
-  font-weight: 200px;
-  color: darkgray;
+  font-weight: lighter;
+  color: black;
+}
+
+.heading-top {
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: lighter;
+  color: black;
+}
+
+@media only screen and (min-width: 800px) {
+  .heading {
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .heading {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .heading {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .heading {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
 }
 
 .page-num {
@@ -365,10 +409,37 @@
   height: 30px;
   width: 100%;
   // border: 1px solid black;
-  font-size: 18px;
+  font-size: 16px;
+  color: lightgray;
+}
+
+.page-num-descrip-black {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  // border: 1px solid black;
+  font-size: 16px;
+  color: black;
 }
 
 .circle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid lightgray;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 25px;
+  text-align: center;
+  color: lightgray;
+}
+
+.circle-black {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -379,6 +450,7 @@
   border-radius: 50%;
   font-size: 25px;
   text-align: center;
+  color: black;
 }
 
 .num-descrip {
@@ -403,7 +475,7 @@
 
 .line-one-right {
   align: right;
-  width: 44%;
+  width: 46%;
   // height: 1px;
   // background-color: lightgray;
 }
@@ -425,14 +497,14 @@
 
 .line-two-right {
   align: right;
-  width: 44%;
+  width: 45%;
   // height: 1px;
   // background-color: lightgray;
 }
 
 .line-two-left {
   align: left;
-  width: 42%;
+  width: 45%;
   // height: 1px;
   // background-color: lightgray;
 }
@@ -454,7 +526,7 @@
 
 .line-three-left {
   align: left;
-  width: 42%;
+  width: 44%;
   // height: 1px;
   // background-color: lightgray;
 }

@@ -110,6 +110,9 @@ export default class AboutYourself extends React.Component {
     var yesButtonIncome = classNames('yes-button', {'hover-button': !this.state.color_blue_income});
     var noButtonIncome = classNames('no-button', {'hover-button': this.state.color_blue_income});
 
+    var oneHighlighted = classNames('circle-black');
+    var oneDescripHighlighted = classNames('page-num-descrip-black');
+
     const { from } = this.props.location.state || '/';
     const { fireRedirect } = this.state;
 
@@ -122,8 +125,8 @@ export default class AboutYourself extends React.Component {
         <div className="progress-div-all">
           <div className="progress-div">
             <div className="group">
-              <div className="page-num"><hr className="line-one-left"></hr><div className="circle">1</div><hr className="line-one-right"></hr></div>
-            <div className="page-num-descrip">About Yourself</div>
+              <div className="page-num"><hr className="line-one-left"></hr><div className={oneHighlighted}>1</div><hr className="line-one-right"></hr></div>
+            <div className={oneDescripHighlighted}>About Yourself</div>
             </div>
             <div className="group">
               <div className="page-num"><hr className="line-two-left"></hr><div className="circle">2</div><hr className="line-two-right"></hr></div>
@@ -135,7 +138,8 @@ export default class AboutYourself extends React.Component {
             </div>
           </div>
         </div>
-        <div className="progress-div-all">
+        <div className="progress-div-all-text">
+          <h2 className="heading-top">Tell us a bit aboutyourself</h2>
           <h4 className="heading">
             Tell us a bit about yourself and who you’d like to meet.
             The more we know, the better. Be candid--this info is for our eyes only.
