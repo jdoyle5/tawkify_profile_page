@@ -308,6 +308,15 @@
   }
 }
 
+.progress-div-all-nums {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
 .progress-div-all {
   display: flex;
   flex-direction: row;
@@ -317,12 +326,15 @@
 }
 
 .progress-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   height: 100px;
-  // margin-left: 200px;
-  // margin-right: 200px;
-  border: 1px solid black;
+  // border: 1px solid black;
   align-self: center;
+  margin-top: 20px;
 }
 
 .heading {
@@ -333,4 +345,126 @@
   text-align: center;
   font-weight: 200px;
   color: darkgray;
+}
+
+.page-num {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  // border: 1px solid black;
+}
+
+.page-num-descrip {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  // border: 1px solid black;
+  font-size: 18px;
+}
+
+.circle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 25px;
+  text-align: center;
+}
+
+.num-descrip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 33.33%;
+  // border: 1px solid black;
+}
+
+.descrip {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 50%;
+  border: 1px solid black;
+}
+
+.line-one-right {
+  align: right;
+  width: 44%;
+  // height: 1px;
+  // background-color: lightgray;
+}
+
+.line-one-left {
+  align: left;
+  width: 42%;
+  // height: 1px;
+  background: none;
+  border: 0;
+  clear: both;
+  display: block;
+  float: none;
+  font-size: 0;
+  padding: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.line-two-right {
+  align: right;
+  width: 44%;
+  // height: 1px;
+  // background-color: lightgray;
+}
+
+.line-two-left {
+  align: left;
+  width: 42%;
+  // height: 1px;
+  // background-color: lightgray;
+}
+
+.line-three-right {
+  align: right;
+  width: 44%;
+  // height: 1px;
+  background: none;
+  border: 0;
+  clear: both;
+  display: block;
+  float: none;
+  font-size: 0;
+  padding: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.line-three-left {
+  align: left;
+  width: 42%;
+  // height: 1px;
+  // background-color: lightgray;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 33.33%;
+  // border: 1px solid black;
 }

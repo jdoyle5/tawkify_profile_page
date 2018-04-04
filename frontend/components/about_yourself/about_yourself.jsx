@@ -121,9 +121,18 @@ export default class AboutYourself extends React.Component {
         </div>
         <div className="progress-div-all">
           <div className="progress-div">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div className="group">
+              <div className="page-num"><hr className="line-one-left"></hr><div className="circle">1</div><hr className="line-one-right"></hr></div>
+            <div className="page-num-descrip">About Yourself</div>
+            </div>
+            <div className="group">
+              <div className="page-num"><hr className="line-two-left"></hr><div className="circle">2</div><hr className="line-two-right"></hr></div>
+            <div className="page-num-descrip">Ideal Partner</div>
+            </div>
+            <div className="group">
+              <div className="page-num"><hr className="line-three-left"></hr><div className="circle">3</div><hr className="line-three-right"></hr></div>
+            <div className="page-num-descrip">Add Photos</div>
+            </div>
           </div>
         </div>
         <div className="progress-div-all">
