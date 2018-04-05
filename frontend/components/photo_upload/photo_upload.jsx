@@ -14,8 +14,7 @@ export default class PhotoUpload extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      img_url: '',
-      description: ''
+      img_url: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.onImageDrop = this.onImageDrop.bind(this);
@@ -23,11 +22,11 @@ export default class PhotoUpload extends React.Component {
 
   handleSubmit(e) {
   e.preventDefault();
-  const photo = {
-    img_url: this.state.img_url,
-    description: this.state.description
-  };
-  this.props.createPhoto(photo);
+
+  // const photo = {
+  //   img_url: this.state.img_url
+  // };
+  // this.props.createPhoto(photo);
 }
 
 onImageDrop(files) {
@@ -118,17 +117,6 @@ update(field) {
           </Dropzone>
         </div>
 
-        <div className="photo-form-input-container">
-          <label>
-            <input type="text"
-              placeholder="Description"
-              value={this.state.description}
-              onChange={this.update('description')}
-              className="photo-form-input"
-              />
-          </label>
-        </div>
-
         <div className="uploaded-photo">
           {this.state.img_url === '' ? null :
           <div>
@@ -137,9 +125,13 @@ update(field) {
           </div>}
         </div>
 
-        <button className="create-photo-button" onClick={this.handleSubmit}>Upload</button>
+        <button className="create-photo-button" onClick={this.handleSubmit}>CHOOSE FILE</button>
 
-      </div>
+        <div className="form-submit">
+          <input type="submit" value="SAVE AND CONTINUE" />
+        </div>
+
+        </div>
       </div>
     );
   }

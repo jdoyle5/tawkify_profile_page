@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 
 import photoReducer from './photo_reducer';
-import idealPartner from './ideal_partner_reducer';
+import profileReducer from './profile_reducer';
 
 const entitiesReducer = combineReducers({
-  ideal_partner: idealPartner,
-  photos: photoReducer
+  photo: photoReducer,
+  profile: profileReducer
 });
 
 export default entitiesReducer;

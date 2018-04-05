@@ -10,13 +10,13 @@ import {
 
 import NavBar from "./navbar/navbar";
 import AboutYourself from "./about_yourself/about_yourself";
-import PhotoUpload from "./photo_upload/photo_upload";
+import PhotoUploadContainer from "./photo_upload/photo_upload";
 
 const App = () => (
   <div>
     <NavBar />
     <Switch>
-      <Route path="/upload" component={ PhotoUpload }/>
+      <Route path="/upload" component={ PhotoUploadContainer }/>
       <Route path="/" component={ AboutYourself }/>
     </Switch>
   </div>

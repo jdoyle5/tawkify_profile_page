@@ -38,11 +38,19 @@
   margin: 10px 0px;
   padding: 6px 0;
   width: 200px;
-  background-color: #00B9D7;
+  background-color: #F27172;
   color: white;
   font-size: 16px;
   text-align: center;
   margin-bottom: 30px;
+  font-family: helvetica;
+  text-transform: capitalize;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.create-photo-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .uploaded-photo {

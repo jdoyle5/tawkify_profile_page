@@ -36,9 +36,15 @@ export default class AboutYourself extends React.Component {
   onSubmit(e) {
     e.preventDefault();
 
-    /*Handle form processing here*/
-    console.log("submitted");
-    this.setState({ fireRedirect: true })
+    // const profile = {
+    //   color_blue_height: this.state.color_blue_height,
+    //   color_blue_income: this.state.color_blue_income,
+    //   gender: this.state.gender.value,
+    //   genderSeeking: this.state.genderSeeking.value
+    // };
+    // this.props.createProfile(profile);
+
+    this.setState({ fireRedirect: true });
   }
 
   formIsValid() {
@@ -94,12 +100,12 @@ export default class AboutYourself extends React.Component {
   }
 
   render() {
+    var { gender, genderSeeking, color_blue_height, color_blue_income } = this.state;
+
     let yesColorHeight = this.state.color_blue_height ? "#00B9D7" : "#BCBEC0";
     let noColorHeight = this.state.color_blue_height ? "#BCBEC0" : "#00B9D7";
     let yesColorIncome = this.state.color_blue_income ? "#00B9D7" : "#BCBEC0";
     let noColorIncome = this.state.color_blue_income ? "#BCBEC0" : "#00B9D7";
-
-    var { gender, genderSeeking, color_blue_height, color_blue_income } = this.state;
 
     var genderClass = classNames('select', {'has-error': !gender.isValid});
     var genderSeekingClass = classNames('select', {'has-error': !genderSeeking.isValid});
@@ -365,7 +371,7 @@ export default class AboutYourself extends React.Component {
             {/*********************************************************/}
 
             <div className="form-submit">
-              <input type="submit" value="Save and Continue" />
+              <input type="submit" value="SAVE AND CONTINUE" />
             </div>
           </form>
           {fireRedirect && (

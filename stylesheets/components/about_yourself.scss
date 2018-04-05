@@ -74,7 +74,7 @@
 .banner {
   position: absolute;
   display: flex;
-  align-items: center;
+  justify-content: center;
   top: 20%;
   z-index: 1000;
   width: 100%;
@@ -83,13 +83,42 @@
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-size: 20px;
-  text-align: center;
 }
 
 .banner-text {
   display: flex;
   align-items: center;
   text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media only screen and (min-width: 800px) {
+  .banner-text {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .banner-text {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .banner-text {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .banner-text {
+    margin-left: 320px;
+    margin-right: 320px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -324,6 +353,8 @@
   align-items: center;
   float: none;
   margin: 0 auto;
+  font-family: helvetica;
+  text-transform: capitalize;
 
   input[type="submit"] {
     background-color: #00B9D7;
@@ -336,6 +367,8 @@
     align-self: center;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
+    font-family: helvetica;
+    text-transform: capitalize;
   }
 
   input[type="submit"]:hover {
