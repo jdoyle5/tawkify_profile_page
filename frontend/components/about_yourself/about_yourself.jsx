@@ -144,10 +144,10 @@ export default class AboutYourself extends React.Component {
           </div>
         </div>
         <div className="progress-div-all-text">
-          <h2 className="heading-top">Tell us a bit aboutyourself</h2>
+          <h2 className="heading-top">Tell us a bit about yourself</h2>
           <h4 className="heading">
             Tell us a bit about yourself and who you’d like to meet.
-            The more we know, the better. Be candid--this info is for our eyes only.
+            The more we know, the better. Be candid this info is for our eyes only.
             Tawkify profiles and photos will forever be 100% confidential.
           </h4>
         </div>
