@@ -68,13 +68,40 @@
   height: 250px;
   background-image: url("http://res.cloudinary.com/dn7nwtnr4/image/upload/v1522795085/photo-1421986527537-888d998adb74_jh4xuo.jpg");
   background-size: 100%;
-  background-position: 0px -270px;
+  background-position: 0px -200px;
+}
+
+.banner {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 20%;
+  z-index: 1000;
+  width: 100%;
+  height: 90px;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.banner-text {
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (max-width: 800px) {
   .home-photo {
     background-image: none;
     height: 0px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .banner {
+    height: 0px;
+    opacity: 0;
   }
 }
 

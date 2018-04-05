@@ -10,11 +10,15 @@ import {
 
 import NavBar from "./navbar/navbar";
 import AboutYourself from "./about_yourself/about_yourself";
+import PhotoUpload from "./photo_upload/photo_upload";
 
 const App = () => (
   <div>
-    <Route path="/" component={ NavBar }/>
-    <Route path="/" component={ AboutYourself }/>
+    <NavBar />
+    <Switch>
+      <Route path="/upload" component={ PhotoUpload }/>
+      <Route path="/" component={ AboutYourself }/>
+    </Switch>
   </div>
 );
 

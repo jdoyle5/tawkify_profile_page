@@ -38,8 +38,7 @@ export default class AboutYourself extends React.Component {
 
     /*Handle form processing here*/
     console.log("submitted");
-
-    this.setState({ fireRedirect: true });
+    this.setState({ fireRedirect: true })
   }
 
   formIsValid() {
@@ -119,8 +118,14 @@ export default class AboutYourself extends React.Component {
 
     return (
       <div>
-        <div className="home-photo">
-
+        <div className="home-photo"></div>
+        <div className="banner">
+          <div className="banner-text">
+            We'd like to get to know you better.
+            Tell us about yourself and the sort of someone you'd like to meet.
+            Don't worry, no one will see this besides the matchmakers at
+            Tawkify.
+          </div>
         </div>
         <div className="progress-div-all">
           <div className="progress-div">
@@ -364,7 +369,7 @@ export default class AboutYourself extends React.Component {
             </div>
           </form>
           {fireRedirect && (
-            <Redirect to={from || '/'}/>
+            <Redirect to='/upload'/>
           )}
         </div>
       </div>
