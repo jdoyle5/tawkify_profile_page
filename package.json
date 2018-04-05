@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "display-errors": "webpack --display-error-details",
     "start": "webpack --watch",
-    "postinstall": "webpack"
+    "postinstall": "webpack",
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "keywords": [],
   "author": "",
