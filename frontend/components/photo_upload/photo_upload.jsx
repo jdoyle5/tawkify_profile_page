@@ -99,9 +99,12 @@ update(field) {
         <div className="progress-div-all-text">
           <h2 className="heading-top">Tell us a bit about yourself</h2>
           <h4 className="heading">
-            Tell us a bit about yourself and who you’d like to meet.
-            The more we know, the better. Be candid this info is for our eyes only.
-            Tawkify profiles and photos will forever be 100% confidential.
+            We ask that you upload at least 2 pictures of yourself; but
+            upload as many as you'd like. We encourage you to review your
+            pictures periodically to make sure they are up to date.
+            Snapshots and Selfies just fine here. Remember this image is
+            for our internal use and will not be shared with potential
+            matches – you will also be able to swap it out later if you wish.
           </h4>
         </div>
 
