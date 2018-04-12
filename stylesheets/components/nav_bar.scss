@@ -106,12 +106,14 @@
   height: 50px;
   background-color: $chat;
   border: 1px solid $white;
+  text-decoration: none;
 }
 
 .chat-box:hover {
   color: $opacity;
   cursor: pointer;
   opacity: 0.8;
+  text-decoration: none;
 }
 
 .love-expert {

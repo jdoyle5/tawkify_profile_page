@@ -9,7 +9,7 @@ import {
 } from 'react-router-dom';
 
 import NavBar from "./navbar/navbar";
-import AboutYourself from "./about_yourself/about_yourself";
+import AboutYourselfContainer from "./about_yourself/about_yourself_container";
 import PhotoUploadContainer from "./photo_upload/photo_upload";
 
 const App = () => (
@@ -17,7 +17,7 @@ const App = () => (
     <NavBar />
     <Switch>
       <Route path="/upload" component={ PhotoUploadContainer }/>
-      <Route path="/" component={ AboutYourself }/>
+      <Route path="/" component={ AboutYourselfContainer }/>
     </Switch>
   </div>
 );

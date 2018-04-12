@@ -24,6 +24,10 @@ export default class AboutYourself extends React.Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
+  componentWillMount() {
+    window.scrollTo(0, 0);
+  }
+
   onChange(e) {
     var state = this.state;
     this.state[e.target.name].value = e.target.value;

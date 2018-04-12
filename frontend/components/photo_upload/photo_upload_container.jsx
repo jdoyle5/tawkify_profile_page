@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
 import { createPhoto } from '../../actions/photo_upload';
-import PhotoForm from './photo_form';
+import PhotoUpload from './photo_upload';
 
 const mapStateToProps = state => {
-
+  return {};
 };
 
 const mapDispatchToProps = dispatch => ({
@@ -14,4 +14,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(PhotoForm);
+)(PhotoUpload);

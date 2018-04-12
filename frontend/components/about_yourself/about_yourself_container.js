@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
 import { createProfile } from '../../actions/profile_upload';
-import PhotoForm from './photo_form';
+import AboutYourself from './about_yourself';
 
 const mapStateToProps = state => {
-
+  return {};
 };
 
 const mapDispatchToProps = dispatch => ({
@@ -14,4 +14,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(PhotoForm);
+)(AboutYourself);

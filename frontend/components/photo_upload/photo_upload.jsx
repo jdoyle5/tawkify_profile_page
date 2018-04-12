@@ -20,45 +20,49 @@ export default class PhotoUpload extends React.Component {
     this.onImageDrop = this.onImageDrop.bind(this);
   }
 
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   handleSubmit(e) {
-  e.preventDefault();
+    e.preventDefault();
 
-  // const photo = {
-  //   img_url: this.state.img_url
-  // };
-  // this.props.createPhoto(photo);
-}
+    // const photo = {
+    //   img_url: this.state.img_url
+    // };
+    // this.props.createPhoto(photo);
+  }
 
-onImageDrop(files) {
-  this.setState({
-    uploadedFile: files[0]
-  });
+  onImageDrop(files) {
+    this.setState({
+      uploadedFile: files[0]
+    });
 
-  this.handleImageUpload(files[0]);
-}
+    this.handleImageUpload(files[0]);
+  }
 
-handleImageUpload(file) {
-  let upload = request.post(CLOUDINARY_UPLOAD_URL)
-                      .field('upload_preset', CLOUDINARY_UPLOAD_PRESET)
-                      .field('file', file);
+  handleImageUpload(file) {
+    let upload = request.post(CLOUDINARY_UPLOAD_URL)
+                        .field('upload_preset', CLOUDINARY_UPLOAD_PRESET)
+                        .field('file', file);
 
-  upload.end((err, response) => {
-    if (err) {
-      console.error(err);
-    }
-    if (response.body.secure_url !== '') {
-      this.setState({
-        img_url: response.body.secure_url
-      });
-    }
-  });
-}
+    upload.end((err, response) => {
+      if (err) {
+        console.error(err);
+      }
+      if (response.body.secure_url !== '') {
+        this.setState({
+          img_url: response.body.secure_url
+        });
+      }
+    });
+  }
 
-update(field) {
-  return e => this.setState({
-    [field]: e.currentTarget.value
-  });
-}
+  update(field) {
+    return e => this.setState({
+      [field]: e.currentTarget.value
+    });
+  }
 
   render() {
 
