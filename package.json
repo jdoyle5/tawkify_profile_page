@@ -2,11 +2,13 @@
   "name": "profile-page-assets",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://jdoyle5.github.io/tawkify_profile_page/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "display-errors": "webpack --display-error-details",
     "start": "webpack --watch",
     "postinstall": "webpack",
+    "predeploy": "npm run build",
     "deploy": "npm run build&&gh-pages -d build"
   },
   "keywords": [],
@@ -42,5 +44,7 @@
     "webpack": "^3.11.0"
   },
   "description": "",
-  "devDependencies": {}
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
+  }
 }
