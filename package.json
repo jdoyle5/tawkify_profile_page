@@ -8,6 +8,7 @@
     "display-errors": "webpack --display-error-details",
     "start": "webpack --watch",
     "postinstall": "webpack",
+    "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
